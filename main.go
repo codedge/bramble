@@ -58,7 +58,7 @@ func runHandler(ctx context.Context, wg *sync.WaitGroup, name, addr string, hand
 		Addr:         addr,
 		Handler:      handler,
 		ReadTimeout:  5 * time.Second,
-		WriteTimeout: 10 * time.Second,
+		WriteTimeout: 60 * time.Second,
 		IdleTimeout:  120 * time.Second,
 	}
 
